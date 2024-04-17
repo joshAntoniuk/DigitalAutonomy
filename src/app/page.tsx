@@ -890,15 +890,35 @@ export default function Home() {
         View References
       </button>
 
-      <div className="flex flex-col">
-        <div className="">References:</div>
-        <a href="https://www.uxtigers.com/about/people#:~:text=Jakob%20Nielsen%2C%20Ph.,and%20the%2010%20usability%20heuristics.">
+      <div className="mb-10 flex flex-col">
+        <div className="text-xl font-semibold">References:</div>
+        <a
+          className="text-blue-500 hover:underline"
+          href="https://www.uxtigers.com/about/people#:~:text=Jakob%20Nielsen%2C%20Ph.,and%20the%2010%20usability%20heuristics."
+        >
           Jakob Nielsen
         </a>
-        <a href="https://www.cs.uml.edu/~holly/91.550/papers/p338-molich.pdf">Improving a Human-Computer Dialogue</a>
-        <a href="https://link.springer.com/article/10.1007/s10209-022-00925-4">Usability Heuristics in Web Apps</a>
-        <a href="https://compass.onlinelibrary.wiley.com/doi/full/10.1111/phc3.12658">Theory of Nudging</a>
-        <a href="https://aisel.aisnet.org/cgi/viewcontent.cgi?article=1076&context=wi2017">Digital Nudging</a>
+        <a className="text-blue-500 hover:underline" href="https://www.cs.uml.edu/~holly/91.550/papers/p338-molich.pdf">
+          Improving a Human-Computer Dialogue
+        </a>
+        <a
+          className="text-blue-500 hover:underline"
+          href="https://link.springer.com/article/10.1007/s10209-022-00925-4"
+        >
+          Usability Heuristics in Web Apps
+        </a>
+        <a
+          className="text-blue-500 hover:underline"
+          href="https://compass.onlinelibrary.wiley.com/doi/full/10.1111/phc3.12658"
+        >
+          Theory of Nudging
+        </a>
+        <a
+          className="text-blue-500 hover:underline"
+          href="https://aisel.aisnet.org/cgi/viewcontent.cgi?article=1076&context=wi2017"
+        >
+          Digital Nudging
+        </a>
       </div>
     </main>
   );
