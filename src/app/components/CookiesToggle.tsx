@@ -1,10 +1,9 @@
 'use client';
 
-import { motion } from 'framer-motion';
 import { useState } from 'react';
 
 function CookiesToggle() {
-  const [x, setX] = useState(0);
+  // const [x, setX] = useState(0);
   const [toggleOne, setToggleOne] = useState(true);
   const [toggleTwo, setToggleTwo] = useState(true);
 
@@ -24,10 +23,10 @@ function CookiesToggle() {
           onClick={() => setToggleTwo(!toggleTwo)}
           className="relative aspect-video h-20 rounded-full bg-neutral-200"
         >
-          <motion.div
+          {/* <motion.div
             style={{ x }}
             className="absolute top-1/2 size-[70px] -translate-y-1/2 rounded-full bg-neutral-50"
-          />
+          /> */}
         </button>
         <div className="text-black">Allow Website to Collect User Data?</div>
       </div>
