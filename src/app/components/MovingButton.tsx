@@ -2,33 +2,38 @@ import { motion } from 'framer-motion';
 import { useRef, useState } from 'react';
 
 function MovingButton() {
-  const [coordinates, setCoordinates] = useState({ x: 200, y: 200 });
+  type Coordinate = string | number;
+
+  const [coordinates, setCoordinates] = useState<{ left: Coordinate; top: Coordinate }>({ left: '50%', top: '60%' });
   const containerRef = useRef<HTMLInputElement>(null);
 
   const [buttonClicked, setButtonClicked] = useState(false);
 
   const handleMouseEnter = () => {
     if (containerRef.current) {
-      const x = Math.abs(Math.random() * containerRef.current!.clientWidth - 28);
-      const y = Math.abs(Math.random() * containerRef.current!.clientHeight - 28);
-      setCoordinates({ x, y });
+      const buttonWidth = 48; // replace with the actual width of the button
+      const buttonHeight = 32; // replace with the actual height of the button
+
+      const left = Math.abs(Math.random() * (containerRef.current!.clientWidth - buttonWidth));
+      const top = Math.abs(Math.random() * (containerRef.current!.clientHeight - buttonHeight));
+      setCoordinates({ left, top });
     }
   };
 
   return (
-    <div ref={containerRef} className="relative h-full w-full rounded-xl bg-white shadow-xl">
-      <div className="absolute left-1/2 top-[20%] -translate-x-1/2 text-2xl font-semibold">
-        Try and click the button!
-      </div>
-      <div className="absolute left-1/2 top-[35%] w-[70%] -translate-x-1/2 text-center text-base">
-        Try and click the button before you scroll the page! It might be a little more difficult then you think! Try!!
-        Try harder!!
+    <div
+      ref={containerRef}
+      className="relative flex h-full w-full flex-col items-center justify-center rounded-xl bg-white shadow-xl"
+    >
+      <div className="text-center text-2xl font-semibold">Try and click the button!</div>
+      <div className="w-[70%] text-center text-base">
+        Try and click the button before you scroll the page! It might be a little more difficult then you think!
       </div>
       <motion.div
         initial={coordinates}
         animate={coordinates}
         onMouseEnter={() => handleMouseEnter()}
-        className="absolute inline-flex p-7"
+        className={`absolute inline-flex p-7 ${coordinates.left === '50%' && '-translate-x-1/2'}`}
       >
         <button
           onClick={() => setButtonClicked(true)}
