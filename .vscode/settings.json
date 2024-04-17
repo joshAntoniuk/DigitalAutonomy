@@ -1,0 +1,12 @@
+{
+    "editor.formatOnSave": true,
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.wordWrap": "on",
+    "editor.smoothScrolling": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll": "explicit",
+        "source.organizeImports": "explicit",
+        "source.addMissingImports": "explicit"
+    },
+    "editor.formatOnPaste": true,
+}

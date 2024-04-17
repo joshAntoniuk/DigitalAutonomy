@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Bookmania-Black';
+  src: url('../assets/fonts/Bookmania-Black.otf') format('otf'),
+}
+
+@font-face {
+  font-family: 'Bookmania-BlackItalic';
+  src: url('../assets/fonts/Bookmania-BlackItalic.otf') format('otf'),
+}
+
+@font-face {
+  font-family: 'Bookmania-Bold';
+  src: url('../assets/fonts/Bookmania-Bold.otf') format('otf'),
+}
+
+@font-face {
+  font-family: 'Bookmania-BoldItalic';
+  src: url('../assets/fonts/Bookmania-BoldItalic.otf') format('otf'),
+}
+@font-face {
+  font-family: 'Bookmania-Light';
+  src: url('../assets/fonts/Bookmania-Light.otf') format('otf'),
+}
+
+@font-face {
+  font-family: 'Bookmania-LightItalic';
+  src: url('../assets/fonts/Bookmania-LightItalic.otf') format('otf'),
+}
+@font-face {
+  font-family: 'Bookmania-Regular';
+  src: url('../assets/fonts/Bookmania-Regular.otf') format('otf'),
+}
+
+@font-face {
+  font-family: 'Bookmania-RegularItalic';
+  src: url('../assets/fonts/Bookmania-RegularItalic.otf') format('otf'),
+}
+
+@font-face {
+  font-family: 'Bookmania-Semibold';
+  src: url('../assets/fonts/Bookmania-Semibold.otf') format('otf'),
+}
+
+@font-face {
+  font-family: 'Bookmania-SemiboldItalic';
+  src: url('../assets/fonts/Bookmania-SemiboldItalic.otf') format('otf'),
+}
+/* Repeat for the rest of your Bookmania fonts */
+
