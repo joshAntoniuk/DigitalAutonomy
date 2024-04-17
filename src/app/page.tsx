@@ -867,11 +867,38 @@ export default function Home() {
         It is worth mentioning that these Gestalt Principles and Usability Heuristics are vital in maintaining good
         human software interaction. The groups which intentionally cross the line in the sand, and make these tools
         harder to use, reflect their true intentions - valuing their product over your autonomy. It truly is a war of
-        attrition. An example that comes to mind is Facebook&apos;s &apos;solution&apos; to adblockers which search for
-        the word “Advertisement”, and delete that section. Facebook then made a tool, which splits the word into
-        separate sections, each containing a letter, so the adblocker cannot find it. It is things like this, which are
-        a clear violation of human centred design, and reduces the affordances of our tools. Whether these strategies
-        target/violate how we read, **** CHANGE THIS ****, it influences our interaction. talk about our autonomy !!!!
+        attrition. An example that comes to mind is{' '}
+        <a href="https://arinet.com/resources/blog-posts/facebooks-fight-ad-blockers-need-know/">
+          Facebook&apos;s &apos;solution&apos; to adblockers
+        </a>{' '}
+        which search for the word “Advertisement” into separate sections, each containing a letter, so the adblocker
+        cannot find it. It is things like this, which are a clear violation of human centred design, and reduces the
+        usability of these tools.
+        <br />
+        <br />
+        Thaler and Sunstein reinforce this concept through the idea of &apos;libertarian paternalism&apos;, to
+        &quot;affect human behaviour while respecting individual freedom of choice&quot;. Like I briefly mention,
+        nudging can be a good thing, when it is in the interest of the respecting the user and their autonomy - which
+        when done well, is an invisible, thankless job.
+      </div>
+      <button
+        className="mb-10 w-1/4 rounded-lg bg-blue-500 py-5 text-white transition-colors duration-200 hover:bg-blue-600"
+        onClick={() => {
+          document.body.style.transform = 'rotate(180deg)';
+        }}
+      >
+        View References
+      </button>
+
+      <div className="flex flex-col">
+        <div className="">References:</div>
+        <a href="https://www.uxtigers.com/about/people#:~:text=Jakob%20Nielsen%2C%20Ph.,and%20the%2010%20usability%20heuristics.">
+          Jakob Nielsen
+        </a>
+        <a href="https://www.cs.uml.edu/~holly/91.550/papers/p338-molich.pdf">Improving a Human-Computer Dialogue</a>
+        <a href="https://link.springer.com/article/10.1007/s10209-022-00925-4">Usability Heuristics in Web Apps</a>
+        <a href="https://compass.onlinelibrary.wiley.com/doi/full/10.1111/phc3.12658">Theory of Nudging</a>
+        <a href="https://aisel.aisnet.org/cgi/viewcontent.cgi?article=1076&context=wi2017">Digital Nudging</a>
       </div>
     </main>
   );
