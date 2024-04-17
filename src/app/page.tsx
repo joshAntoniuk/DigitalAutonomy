@@ -151,8 +151,8 @@ export default function Home() {
         <div className="flex w-full flex-row">
           <div className="w-1/2 px-20 py-4 text-base text-black max-md:px-10">
             As our understanding of human-computer interaction increases, the principles and hueristics that define our
-            interactions change. I&apos;ve narrowed down the most common five, and out of those five principles,
-            reference the three most violated in daily software interactions.
+            interactions change. I&apos;ve narrowed down the most common principles, and show some examples and fixes of
+            them.
           </div>
           <div className="w-1/2 bg-neutral-200" />
         </div>
