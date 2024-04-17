@@ -96,14 +96,14 @@ export default function Home() {
     <main className="flex w-screen flex-col items-center">
       <div className="flex h-[200vh] w-full flex-row">
         <div className="z-10 flex h-full w-1/2 flex-col">
-          <div className="flex h-screen flex-col justify-between p-20 md:p-10">
-            <div className="w-full text-wrap font-bookmania-bold text-7xl text-black md:text-5xl">
+          <div className="flex h-screen flex-col justify-between p-20 max-md:p-10">
+            <div className="w-full text-wrap font-bookmania-bold text-7xl text-black max-md:text-5xl">
               Circumventing Autonomy in Software Through Design
             </div>
             <div className="w-full text-xl text-black">A Commentary by Josh Antoniuk</div>
           </div>
-          <div className="flex h-screen flex-col justify-between p-20 md:p-10">
-            <div className="h-screen w-full font-bookmania-bold text-7xl text-black md:text-5xl">Intro</div>
+          <div className="flex h-screen flex-col justify-between p-20 max-md:p-10">
+            <div className="h-screen w-full font-bookmania-bold text-7xl text-black max-md:text-5xl">Intro</div>
             <div className="w-full text-base text-black">
               The nudging of undesirable behaviour and loss of autonomy can be attributed to{' '}
               <span className="font-semibold italic">Gestalt Theory, Software Usability Heuristics </span>, and
@@ -127,7 +127,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="sticky top-0 z-0 flex h-screen w-1/2 flex-col items-center justify-center space-y-10 bg-neutral-200 p-20 shadow-inner md:p-10">
+        <div className="sticky top-0 z-0 flex h-screen w-1/2 flex-col items-center justify-center space-y-10 bg-neutral-200 p-20 shadow-inner max-md:p-10">
           <div className="h-1/2 w-full">
             <MovingButton />
           </div>
@@ -143,13 +143,13 @@ export default function Home() {
       </div>
       <div className="relative flex w-full flex-col">
         <div className="sticky left-0 top-0 z-40 flex h-[10vh] w-full flex-row">
-          <div className="w-1/2 bg-white font-bookmania-bold text-6xl text-black md:text-4xl">
-            <div className="absolute top-1/2 -translate-y-1/2 pl-20 md:pl-10 ">Gestalt Principles</div>
+          <div className="w-1/2 bg-white font-bookmania-bold text-6xl text-black max-md:text-4xl">
+            <div className="absolute top-1/2 -translate-y-1/2 pl-20 max-md:pl-10 ">Gestalt Principles</div>
           </div>
           <div className="w-1/2 bg-neutral-200" />
         </div>
         <div className="flex w-full flex-row">
-          <div className="w-1/2 px-20 py-4 text-base text-black md:px-10">
+          <div className="w-1/2 px-20 py-4 text-base text-black max-md:px-10">
             As our understanding of human-computer interaction increases, the principles and hueristics that define our
             interactions change. I&apos;ve narrowed down the most common five, and out of those five principles,
             reference the three most violated in daily software interactions.
@@ -157,7 +157,7 @@ export default function Home() {
           <div className="w-1/2 bg-neutral-200" />
         </div>
         <div className="relative flex w-full flex-row max-lg:h-[90vh] ">
-          <div className="sticky top-[10%] h-fit w-1/2 px-20 pb-10 md:px-10">
+          <div className="sticky top-[10%] h-fit w-1/2 px-20 pb-10 max-md:px-10">
             <div className="pb-4 font-bookmania-bold text-4xl text-black">Proximity</div>
             <div className="relative w-full text-base text-black">
               {proximityState && (
@@ -211,7 +211,7 @@ export default function Home() {
           </div>
         </div>
         <div className="relative flex h-[90vh] w-full flex-row">
-          <div className="sticky top-[10%] h-fit w-1/2 px-20 pb-10 md:px-10">
+          <div className="sticky top-[10%] h-fit w-1/2 px-20 pb-10 max-md:px-10">
             <div className="pb-4 font-bookmania-bold text-4xl text-black">Figure/Ground</div>
             <div className="relative w-full text-base text-black">
               {figureGroundState && (
@@ -255,7 +255,7 @@ export default function Home() {
               from ground.
             </div>
           </div>
-          <div className="h-full w-1/2 bg-neutral-200 px-20 py-20 md:px-10">
+          <div className="h-full w-1/2 bg-neutral-200 px-20 py-20 max-md:px-10">
             <div className="relative w-full text-base text-black">
               {figureGround2State && (
                 <div className="absolute inset-0 overflow-hidden rounded-xl backdrop-blur-sm">
@@ -299,7 +299,7 @@ export default function Home() {
           </div>
         </div>
         <div className="flex w-full flex-row">
-          <div className="w-1/2 px-20 md:px-10">
+          <div className="w-1/2 px-20 max-md:px-10">
             <div className="pb-4 font-bookmania-bold text-4xl text-black">Similarity</div>
             <div ref={containerRef} className="relative min-h-1 w-full text-base text-black">
               {containerRef.current && (
@@ -369,13 +369,13 @@ export default function Home() {
       <div className="relative flex w-full flex-col">
         <div className="sticky left-0 top-0 z-40 flex h-[10vh] w-full flex-row">
           <div className="w-1/2 bg-neutral-200" />
-          <div className="w-1/2 bg-white font-bookmania-bold text-6xl text-black md:text-4xl">
-            <div className="absolute top-1/2 -translate-y-1/2 pl-20 md:pl-10">Usability Heuristics</div>
+          <div className="w-1/2 bg-white font-bookmania-bold text-6xl text-black max-md:text-4xl">
+            <div className="absolute top-1/2 -translate-y-1/2 pl-20 max-md:pl-10">Usability Heuristics</div>
           </div>
         </div>
         <div className="flex w-full flex-row">
           <div className="w-1/2 bg-neutral-200" />
-          <div className="w-1/2 px-20 py-4 text-base text-black md:px-10">
+          <div className="w-1/2 px-20 py-4 text-base text-black max-md:px-10">
             Now that we are able to understand what some Gestalt Principles are, we can apply this concept to the
             autonomy of individuals interacting with software. Known as Usability Heuristics, the aim of these is to
             evaluate how efficient and usable our tools are during interaction.
@@ -394,7 +394,7 @@ export default function Home() {
           </div>
         </div>
         <div className="relative flex h-[90vh] w-full flex-row">
-          <div className="h-full w-1/2 divide-y bg-neutral-200 px-20 pb-10 md:px-10">
+          <div className="h-full w-1/2 divide-y bg-neutral-200 px-20 pb-10 max-md:px-10">
             <div className="h-full divide-y">
               {control1State ? (
                 <div className="flex h-32 w-full flex-col items-center bg-white text-green-500">
@@ -688,7 +688,7 @@ export default function Home() {
               )}
             </div>
           </div>
-          <div className="sticky top-[10%] h-fit w-1/2 px-20 pb-10 md:px-10">
+          <div className="sticky top-[10%] h-fit w-1/2 px-20 pb-10 max-md:px-10">
             <div className="pb-4 font-bookmania-bold text-4xl text-black">User Control & Freedom</div>
             <div className="relative w-full text-base text-black">
               {/* {proximityState && (
@@ -730,7 +730,7 @@ export default function Home() {
           </div>
         </div>
         <div className="relative flex h-[90vh] w-full flex-row">
-          <div className="h-full w-1/2 bg-neutral-200 px-20 pb-10 md:px-10">
+          <div className="h-full w-1/2 bg-neutral-200 px-20 pb-10 max-md:px-10">
             <div className="flex w-full flex-col overflow-y-hidden rounded-xl bg-white p-10 transition-all duration-300">
               <div className="text-xl font-semibold text-black">
                 Allow us to track cookies and send oddly specific ads?
@@ -749,7 +749,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="sticky top-[10%] h-fit w-1/2 px-20 pb-10 md:px-10">
+          <div className="sticky top-[10%] h-fit w-1/2 px-20 pb-10 max-md:px-10">
             <div className="pb-4 font-bookmania-bold text-4xl text-black">Flexibility & Efficiency of Use</div>
             <div className="relative w-full text-base text-black">
               {answer !== 'ln(2)' && (
@@ -816,7 +816,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="sticky top-[10%] h-fit w-1/2 px-20 pb-10 md:px-10">
+          <div className="sticky top-[10%] h-fit w-1/2 px-20 pb-10 max-md:px-10">
             <div className="bg-white pb-4 font-bookmania-bold text-4xl text-black">Consistency & Standards</div>
             <div className="relative w-full bg-white text-base text-black">
               {consistencyState && (
